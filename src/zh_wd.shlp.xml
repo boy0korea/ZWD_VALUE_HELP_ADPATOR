@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SHLP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD30V>
+    <SHLPNAME>ZH_WD</SHLPNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DDTEXT>WD value help adaptor</DDTEXT>
+    <ISSIMPLE>X</ISSIMPLE>
+    <SELMTYPE>F</SELMTYPE>
+    <SELMEXIT>ZWD_VHA_SH_EXIT_ZH_WD</SELMEXIT>
+    <DIALOGTYPE>D</DIALOGTYPE>
+    <FUZZY_SIMILARITY>0.8</FUZZY_SIMILARITY>
+   </DD30V>
+   <DD32P_TABLE>
+    <DD32P>
+     <SHLPNAME>ZH_WD</SHLPNAME>
+     <FIELDNAME>EV_VALUE</FIELDNAME>
+     <FLPOSITION>0001</FLPOSITION>
+     <ROLLNAME>TEXT1000</ROLLNAME>
+     <SHLPINPUT>X</SHLPINPUT>
+     <SHLPOUTPUT>X</SHLPOUTPUT>
+     <SHLPLISPOS>01</SHLPLISPOS>
+     <ROLLCHANGE>N</ROLLCHANGE>
+    </DD32P>
+    <DD32P>
+     <SHLPNAME>ZH_WD</SHLPNAME>
+     <FIELDNAME>IV_COMPONENT_NAME</FIELDNAME>
+     <FLPOSITION>0002</FLPOSITION>
+     <ROLLNAME>WDY_COMPONENT_NAME</ROLLNAME>
+     <SHLPINPUT>X</SHLPINPUT>
+     <ROLLCHANGE>N</ROLLCHANGE>
+     <SCRLEN3>22</SCRLEN3>
+    </DD32P>
+   </DD32P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

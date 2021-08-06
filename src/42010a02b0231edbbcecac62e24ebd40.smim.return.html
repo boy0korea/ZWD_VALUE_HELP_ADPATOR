@@ -1,0 +1,13 @@
+<html>
+<body onload="z()">
+<form id="post" method="post" action="SAPEVENT:RETURN">
+<input id="return" type="hidden" name="return" value="" />
+</form>
+<script>
+    function z() {
+		document.getElementById("return").value = window.location.search.substr(1);
+		document.getElementById("post").submit();
+	};
+</script>
+</body>
+</html>
