@@ -148,7 +148,7 @@ ENDFORM.
 *&---------------------------------------------------------------------*
 FORM load_for_webgui .
   DATA: lv_string TYPE string,
-        lt_html   TYPE w3html_tab,
+        lt_html   TYPE TABLE OF w3html,
         lv_url    TYPE bxurlg-gen_url.
 
   lv_string = '<html><body onload="z()">'
