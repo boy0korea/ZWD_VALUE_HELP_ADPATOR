@@ -77,7 +77,7 @@ FUNCTION zwd_vha_sh_exit_zh_wd .
     RETURN.
   ENDIF.
 
-  IF lv_value IS INITIAL.
+  IF lv_value EQ zcl_zwd_vha=>gc_return_exit.
     callcontrol-step = 'EXIT'.
     RETURN.
   ENDIF.
