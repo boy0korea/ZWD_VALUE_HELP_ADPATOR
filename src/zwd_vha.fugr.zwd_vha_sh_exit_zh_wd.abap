@@ -8,6 +8,7 @@ FUNCTION zwd_vha_sh_exit_zh_wd .
 *"     VALUE(SHLP) TYPE  SHLP_DESCR
 *"     VALUE(CALLCONTROL) LIKE  DDSHF4CTRL STRUCTURE  DDSHF4CTRL
 *"----------------------------------------------------------------------
+* https://github.com/boy0korea/ZWD_VALUE_HELP_ADPATOR
   DATA: ls_selopt         TYPE ddshselopt,
         ls_fieldprop      TYPE ddshfprop,
         ls_fielddescr     TYPE dfies,

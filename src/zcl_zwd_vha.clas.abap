@@ -1,25 +1,25 @@
-class ZCL_ZWD_VHA definition
-  public
-  inheriting from CL_WD_COMPONENT_ASSISTANCE
-  create public .
+CLASS zcl_zwd_vha DEFINITION
+  PUBLIC
+  INHERITING FROM cl_wd_component_assistance
+  CREATE PUBLIC .
 
-public section.
+  PUBLIC SECTION.
 
-  data MV_ATTRIBUTE_CHANGED type FLAG read-only .
-  constants GC_RETURN_EXIT type STRING value '*"eXiT==|*' ##NO_TEXT.
+    DATA mv_attribute_changed TYPE flag READ-ONLY .
+    CONSTANTS gc_return_exit TYPE string VALUE '*"eXiT==|*' ##NO_TEXT.
 
-  methods ON_ATTRIBUTE_CHANGED
-    for event ON_ATTRIBUTE_CHANGED of CL_WDR_CONTEXT_ELEMENT
-    importing
-      !ATTRIBUTE_NAME
-      !CONTROLLER
-      !NODE
-      !ELEMENT
-      !ELEMENT_INDEX
-      !NODE_NAME
-      !PROPERTY .
-protected section.
-private section.
+    METHODS on_attribute_changed
+      FOR EVENT on_attribute_changed OF cl_wdr_context_element
+      IMPORTING
+        !attribute_name
+        !controller
+        !node
+        !element
+        !element_index
+        !node_name
+        !property .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
