@@ -88,7 +88,13 @@ FORM on_sapevent  USING    iv_action
 
     WHEN 'RETURN'.
       lv_param = lv_param+7.
-      gv_value = cl_http_utility=>unescape_url( lv_param ).
+*      gv_value = cl_http_utility=>unescape_url( lv_param ).
+      gv_value = lv_param.
+      " 특수문자 3개 처리 &=?
+      " CL_GUI_HTML_VIEWER->TRANSLATE_QUERY_STRING
+      REPLACE ALL OCCURRENCES OF '%26' IN gv_value WITH '&'.
+      REPLACE ALL OCCURRENCES OF '%3D' IN gv_value WITH '='.
+      REPLACE ALL OCCURRENCES OF '%3F' IN gv_value WITH '?'.
       PERFORM do_free_and_back.
 
     WHEN OTHERS.
